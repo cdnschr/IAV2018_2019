@@ -44,7 +44,7 @@ public:
         this->QGL_Layout->addWidget(this->QLE_Menge,0,1);
 
         this->QGL_Layout->addWidget(this->QL_Strecke,1,0);
-        this->QGL_Layout->addWidget(this->QLE_Strecke,1,0);
+        this->QGL_Layout->addWidget(this->QLE_Strecke,1,1);
         this->QGL_Layout->addWidget(this->QL_Verbrauch,2,0);
         this->QGL_Layout->addWidget(this->QLE_Verbrauch,2,1);
         this->QGL_Layout->addWidget(this->QPB_Loeschen,2,2);
