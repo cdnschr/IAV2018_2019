@@ -39,11 +39,24 @@ void Waehrungsrechner::berechnen(void)
         this->QLE_Two->setText(QString("%1").arg(ziel, 0,'f',2));
     }
 
+    else if (cb_one == 1 && cb_two == 2)
+    {
+        ziel = ausgang * (1.0+(usd-pound));
+        this->QLE_Two->setText(QString("%1").arg(ziel, 0,'f',2));
+    }
+
+    else if (cb_one == 2 && cb_two == 1)
+    {
+        ziel = ausgang * (1.0-(usd-pound));
+        this->QLE_Two->setText(QString("%1").arg(ziel, 0,'f',2));
+    }
+
     else if (cb_one == 0 && cb_two == 0)
     {
         ziel = ausgang;
         this->QLE_Two->setText(QString("%1").arg(ziel, 0,'f',2));
     }
+
     else if (cb_one == 1 && cb_two == 1)
     {
         ziel = ausgang;
