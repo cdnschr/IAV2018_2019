@@ -34,9 +34,9 @@ public:
         this->QGL_Layout->addWidget(this->QL_binaer,0,0);
         this->QGL_Layout->addWidget(this->QCB_binaer,0,1);
         this->QGL_Layout->addWidget(this->QL_dezimal,0,2);
-        this->QGL_Layout->addWidget(this->QLE_dezimal0,3);
+        this->QGL_Layout->addWidget(this->QLE_dezimal,0,3);
         this->setLayout(this->QGL_Layout);
-        QObject::connect(this->QLE_dezimal)
+        QObject::connect(this->QLE_dezimal,);
     }
 }
 
