@@ -3,7 +3,7 @@
 int main(int argc, char** argv)
 {
     QApplication myApp(argc, argv);
-    BinaerDezimalRechner myWin;
+    Binaerrechner myWin;
 
     myWin.setWindowTitle("Binaerrechner");
     myWin.setFixedSize(400,200);
