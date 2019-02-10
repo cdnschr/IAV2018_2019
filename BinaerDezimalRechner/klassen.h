@@ -36,8 +36,8 @@ public:
         this->QGL_Layout->addWidget(this->QL_dezimal,0,2);
         this->QGL_Layout->addWidget(this->QLE_dezimal,0,3);
         this->setLayout(this->QGL_Layout);
-        QObject::connect(this->QLE_dezimal,);
+        QObject::connect(this->QLE_dezimal,SIGNAL(textChanged()),this,SLOT(berechnen()));
     }
-}
+};
 
 #endif // KLASSEN_H

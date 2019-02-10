@@ -2,7 +2,7 @@
 
 #define BITS 32
 
-klassen::klassen()
+void Binaerrechner::berechnen(void)
 {
 
 }
