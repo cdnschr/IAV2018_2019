@@ -70,3 +70,12 @@ void Waehrungsrechner::berechnen(void)
     }
 }
 
+void Waehrungsrechner::loeschen_one(void)
+{
+    this->QLE_One->setText("");
+}
+
+void Waehrungsrechner::loeschen_two(void)
+{
+    this->QLE_Two->setText("");
+}

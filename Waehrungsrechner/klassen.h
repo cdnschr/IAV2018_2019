@@ -54,6 +54,8 @@ public:
         this->QGL_Layout->addWidget(this->QPB_Berechnen,3,0,1,3);
         this->setLayout(this->QGL_Layout);
         QObject::connect(this->QPB_Berechnen,SIGNAL(clicked()),this,SLOT(berechnen()));
+        QObject::connect(this->QB_One,SIGNAL(currentIndexChanged(int)),this,SLOT(loeschen_one()));
+        QObject::connect(this->QB_Two,SIGNAL(currentIndexChanged(int)),this,SLOT(loeschen_two()));
 
     }
 
@@ -75,6 +77,8 @@ public:
 
 public slots:
     void berechnen(void);
+    void loeschen_one(void);
+    void loeschen_two(void);
 };
 
 #endif // KLASSEN_H

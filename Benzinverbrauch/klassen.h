@@ -8,6 +8,7 @@
 #include <QPushButton>
 #include <QGridLayout>
 #include <QString>
+#include <QDoubleValidator>
 
 class Benzinverbrauchsrechner : public QWidget
 {
@@ -18,6 +19,7 @@ private:
     QLineEdit *QLE_Menge, *QLE_Strecke, *QLE_Verbrauch;
     QPushButton *QPB_Loeschen, *QPB_Berechnen;
     QGridLayout *QGL_Layout;
+    QDoubleValidator *QDV_val;
 protected:
 
 public:
@@ -33,6 +35,8 @@ public:
         this->QLE_Verbrauch = new QLineEdit(this);
 
         this->QLE_Verbrauch->setReadOnly(true);
+
+        this->QDV_val = new QDoubleValidator(0.01, 10.0e6,1,this);
 
         this->QPB_Berechnen = new QPushButton("berechnen",this);
         this->QPB_Loeschen = new QPushButton("löschen",this);
